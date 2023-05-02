@@ -1,4 +1,3 @@
-import swaggerUi
 
 import App from "./router"
 

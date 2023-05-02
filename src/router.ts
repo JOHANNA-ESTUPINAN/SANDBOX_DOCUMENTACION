@@ -1,16 +1,23 @@
+import swaggerUi from 'swagger-ui-express'
+import { swaggerSpec } from './swagger.conf'
 import express,{Application, Request, Response} from 'express'
 
 class App{
 
         //Atributo
 
-    public app:any
+    public app:Application
     private server:any
 
     constructor(){
         this.app=express()
         this.app.use(express.json())
         this.routes()
+        this.app.use(
+            "/api-docs",
+            swaggerUi.serve,
+            swaggerUi.setup(swaggerSpec)
+        )
     }
 
     private routes():void{
