@@ -7,6 +7,13 @@ import express,{Application, Request, Response} from 'express'
  * @description Clase Inicial de ejemplo para manejar rutas y documentacion
  */
 class App{
+    static App(App: any) {
+        throw new Error('Method not implemented.')
+    }
+    start: any
+    static close(): jest.ProvidesHookCallback {
+        throw new Error('Method not implemented.')
+    }
 	//Atributo
 	public app:Application
 	private server:any
