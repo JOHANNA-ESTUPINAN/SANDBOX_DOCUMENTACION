@@ -7,13 +7,13 @@ import express,{Application, Request, Response} from 'express'
  * @description Clase Inicial de ejemplo para manejar rutas y documentacion
  */
 class App{
-    static App(App: any) {
-        throw new Error('Method not implemented.')
-    }
-    start: any
-    static close(): jest.ProvidesHookCallback {
-        throw new Error('Method not implemented.')
-    }
+	static App(App:any) {
+		throw new Error('Method not implemented.')
+	}
+	start:any
+	static close(): jest.ProvidesHookCallback {
+		throw new Error('Method not implemented.')
+	}
 	//Atributo
 	public app:Application
 	private server:any
@@ -30,7 +30,7 @@ class App{
 		this.routes()
 		this.app.use('/api-docs',swaggerUi.serve,swaggerUi.setup(swaggerSpec))}
 	private routes():void{
-		this.app.get('/',(req:Request, res:Response)=>{res.send('Bienvenidos a typescript')})
+		this.app.get('/',(req:Request, res:Response)=>{res.send('Bienvenidos a la IPS AteneaIPS')})
 		this.app.post('/paciente',(req:Request, res:Response)=>{res.send('Bienvenidos a typescript')})}
 	public Star():void{this.app.listen(3000,()=>{console.log('El servidor esta escuchando en el puerto 3000')})}
 	public close():void{this.server.close()}
