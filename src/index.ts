@@ -1,4 +1,7 @@
 import App from './App'
-//crear un objeto de la clase Ap
+
+
 const program=new App()
-program.Star()
+program.start()
+
+//npx ts-node src/index.ts ejecutar el archivo

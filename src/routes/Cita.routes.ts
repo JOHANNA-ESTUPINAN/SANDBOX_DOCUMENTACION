@@ -2,11 +2,11 @@ import { Router, Request, Response } from 'express'
 import CitaController from '../controllers/citaController'
 
 class CitaRouter {
-    router: Router
+    router:Router
     citaController: CitaController
 
     constructor() {
-        this.router = Router()
+        this.router=Router()
         this.citaController = new CitaController()
         this.routes()
     }

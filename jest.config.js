@@ -1,2 +1,4 @@
-export const preset = 'ts-jest'
-export const textEnvirome = 'node'
+module.exports={
+	preset:'ts-jest',
+	testEnvironment:'node'
+}
